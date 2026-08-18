@@ -11,3 +11,4 @@ setImmediate(()=>{
 process.nextTick(()=>{
     console.log("4. nextTick");
 });
+console.log("1. Start"); 
