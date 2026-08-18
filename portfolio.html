@@ -1,0 +1,146 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Profile Card - Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(249, 244, 244);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: center;   
+            height: 100vh;
+        }
+        
+
+        .profile-card {
+            width: 550px;
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+            display: flex;
+            flex-direction: column; 
+            align-items: center;     
+        }
+
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin-bottom: 15px;
+        }
+
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .course {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        
+        .info-box {
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
+            margin: 10px;
+            padding: 10px;
+            background: #e8f4ff;
+            border-radius: 10px;
+        }
+
+        .info-box div {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 12px;
+            background: #3498db;
+            color: white;
+            border: none;
+            width: 50%;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+        }  
+
+        .btn:hover {
+            background: rgb(203, 203, 216);
+        }
+        .footer{
+
+             padding: auto;
+             position: fixed;
+             bottom: 0;
+             left: 0;
+             width: 100%;
+             background-color: #333;
+             color: white;
+             text-align: center;
+             padding: 15px;
+        }
+        .skills{
+            width: 100%;
+            display: flex;
+            justify-content: space-between; 
+            margin: 10px;
+            padding: 10px;
+            background: #e8f4ff;
+            border-radius: 10px;
+
+        }
+    
+        
+    </style>
+
+</head>
+<body>
+
+
+    <div class="profile-card">
+        <h2>Portfolio</h2>
+        <img src="image/aryan.jpg" alt="Student Photo" />
+
+        <div class="name">Aryan Mavi</div>
+        <div class="course">B.Tech - Computer Science</div>
+
+        <div class="info-box">
+            <div><strong>Age</strong><br>19</div>
+            <div><strong>Year</strong><br>2nd</div>
+            <div><strong>SGPA 1st sem</strong><br>9.2</div>
+        </div>
+        <div> <h3><strong>Skills</strong></h3></div>
+        <div class="skills">
+           
+            <div>Htmls</div>
+            <div>CSS</div>
+            <div>Data Structure</div>
+
+        </div>
+       
+        <div><strong>Books i like</strong></div>
+
+        <button class="btn"> <a href="https://readerinbookland.com/cdn/shop/files/Visit-Website-or-DM-for-Order.jpg?v=1766089657"><strong>fav book</strong></a></button>
+        
+    
+     
+        <div>
+            <footer>
+            Created by @aryanmavi
+        </footer>
+        </div>
+     
+</body>
+</html>
