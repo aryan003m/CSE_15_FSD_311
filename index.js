@@ -22,5 +22,14 @@
 // console.log("mavi")
 // import 'xyz.js'
 
-const shyam = require("./xyz");
-console.log("hello",shyam);
+// const shyam = require("./xyz");
+// console.log("hello",shyam);
+
+const os = require("os");
+console.log("free memory",os.freemem());
+console.log("platform",os.platform());
+console.log("release",os.release());
+console.log("total memory",os.totalmem);
+console.log("CPU Info",os.cpus());
+console.log("HOme Directory",os.homedir());
+console.log("home name",os.hostname());
